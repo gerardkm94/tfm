@@ -28,7 +28,7 @@ def new_transaction():
 def get_node():
     node_data = []
     for block in bc.chain:
-        node_data.append(block.get_block())
+        node_data.append(block.get_block)
     return json.dumps({"length": len(node_data),
                        "chain": node_data})
 
